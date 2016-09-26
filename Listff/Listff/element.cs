@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Listff
 {
-    class element
+    class element<T>
+
     {
+        element<T> head;
+        public element()
+        {
+
+        }
+        public void addfirst(element<T> e)
+        {
+            e.Next = head;
+            this.head = e;
+        }
     }
 }
