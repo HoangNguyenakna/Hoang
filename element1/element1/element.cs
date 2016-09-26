@@ -9,7 +9,7 @@ namespace element1
     class element<T>
     {
         private T data;
-
+       
         public T Data
         {
             get { return data; }
@@ -21,6 +21,11 @@ namespace element1
         {
             get { return Next; }
             set { Next = value; }
+        }
+        public element(T x)
+        {
+            this.data = x;
+            this.next = null;
         }
     }
 }

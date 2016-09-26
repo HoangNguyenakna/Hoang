@@ -14,13 +14,30 @@ namespace element1
             get { return head; }
             set { head = value; }
         }
-        public List()
-        {}
-            public void addfirst(element<T> e)
+         public List()
+        {
+            this.head=null;
+        }
+            public void addfirst (element<T> e)
         {
             e.next = head;
             this.head = e;
         }
+        public void Printlist()
+            {
+                element<T> point = head;
             }
+            public void PrintSolution()
+            {
+                element<T> point = head;
+                while (point.next !=null)
+                {
+                    Console.WriteLine(point.Data);
+                        point=point.next;
+                }
+            }
+
+
+    }
 
 }
