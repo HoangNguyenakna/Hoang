@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Listff
+namespace element1
 {
-    class element<>
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
